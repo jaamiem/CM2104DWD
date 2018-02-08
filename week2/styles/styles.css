@@ -10,8 +10,43 @@ header, section, article, nav, aside, footer, div {
 	margin: 10px;
 }
 
-.flex-container-nav {
+.flex {
 	display: -webkit-flex;
 	display: flex;
-	flex-direction: row;
+}
+
+.flex-space {
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.thumbnail {
+	max-width:64px;
+	max-height:64px;
+}
+
+
+
+.column{
+	float:left;
+}
+
+.cLeft{
+	width:75%;
+}
+
+.cRight{
+	width:25%;
+}
+
+.row:after{
+	content:"";
+	display:table;
+	clear:both;
 }

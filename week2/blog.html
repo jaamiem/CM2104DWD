@@ -10,33 +10,52 @@
       <img src="the-blog.jpg" id="SiteLogo"/>
       <h1 id="SiteTitle"> The Blogs</h1>
     </header>
-    <nav class="flex-container-nav" id="SiteNav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <nav class="flex flex-space" id="SiteNav">
+			<a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
     </nav>
-    <section id="PageContent">
-      <article class="BlogPost">
-        <header>
-          <h1 class="BlogPostTitle">This is a Blog Post Title</h1>
-          <time class="BlogPostDate" pubdate="pubdate">2012-02-10</time>
-        </header>
-        <div class="BlogPostContent">
-          <p>Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. </p>
-        </div>
-      </article>
-    </section>
-    <footer id="PageFooter">
+		<div class="row">
+			<div class="column cLeft">
+				<section id="imageInFocus">
+					<img src="content/default.jpeg" alt="Default">
+				</section>
+		    <section id="ImageDesc">
+		      <article class="BlogPost">
+		        <header>
+		          <h1 class="BlogPostTitle">This is a Blog Post Title</h1>
+		          <time class="BlogPostDate" pubdate="pubdate">2012-02-10</time>
+		        </header>
+		        <div class="BlogPostContent">
+		          <p>Lorem ipsum dolor sit amet,
+		            consectetur adipisicing elit,
+		            sed do eiusmod tempor incididunt
+		            ut labore et dolore magna aliqua.
+		            Ut enim ad minim veniam, quis nostrud
+		            exercitation ullamco laboris nisi ut aliquip
+		            ex ea commodo consequat. Duis aute irure dolor
+		            in reprehenderit in voluptate velit esse cillum
+		            dolore eu fugiat nulla pariatur. </p>
+		        </div>
+		      </article>
+		    </section>
+			</div>
+			<div class="column cRight">
+				<section id="Sidebar">
+				<div class="flex flex-space">
+					<img src="content/default.jpeg" alt="Default" class="thumbnail">
+					<img src="content/default.jpeg" alt="Default" class="thumbnail">
+					<img src="content/default.jpeg" alt="Default" class="thumbnail">
+					<img src="content/default.jpeg" alt="Default" class="thumbnail">
+					<img src="content/default.jpeg" alt="Default" class="thumbnail">
+					<img src="content/default.jpeg" alt="Default" class="thumbnail">
+					<img src="content/default.jpeg" alt="Default" class="thumbnail">
+					<img src="content/default.jpeg" alt="Default" class="thumbnail">
+				</div>
+			</section>
+			</div>
+		</div>
+		<footer id="PageFooter">
       <a href="#">Legal Stuff</a>
     </footer>
 </html>
