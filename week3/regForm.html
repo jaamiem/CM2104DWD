@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<meta charset="utf-8">
+	<script>
+		var username = form.username.value;
+		var breed = form.breed.value;
+		var email = form.email.value;
+		var homepage = form.homepage.value;
+		var dob = form.dob.value;
+		var about = form.about.value;
+	</script>
+</head>
+<body>
+	<form>
+		<table border="0" cellspacing="5" cellpadding="5">
+			<tr>
+				<td>Username:</td>
+				<td><input type="textarea" name="username"></td>
+			</tr>
+			<tr>
+				<td>Breed:</td>
+				<td><input type="textarea" name="breed"></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="textarea" name="email"></td>
+			</tr>
+			<tr>
+				<td>Homepage:</td>
+				<td><input type="textarea" name="homepage"></td>
+			</tr>
+			<tr>
+				<td>Date of Birth:</td>
+				<td><input type="textarea" name="dob"></td>
+			</tr>
+			<tr>
+				<td>About:</td>
+				<td><input type="textarea" name="about"></td>
+			</tr>
+		</table>
+		<input type="submit" name="submit" value="submit" onclick="testResults(this.form)" />
+	</form>
+</body>
+</html>
