@@ -1,0 +1,15 @@
+.twitbox {
+
+	width:60%;
+	height:10%;
+	background-color: #e6f7ff;
+	padding: 1em;
+}
+
+.twitbox:focus{
+
+}
+
+.twit {
+	background-color: #cceeff;
+}
