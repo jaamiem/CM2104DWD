@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/header') %>
+<body>
+<%- include('partials/navbar') %>
+
+<script defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRK2xpbDf14zS08cMkp252N8uPvt3O4_I&callback=initMap">
+</script>
+
+<script>
+var map;
+var spots = <%- JSON.stringify(spots) %>;
+
+function initMap() {
+	var abz = {lat:57.1497, lng:-2.0943};
+	map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 8,
+		center: abz
+	});
+}
+
+function placeMarker(location){
+	var marker = new google.maps.Marker({
+		position: location,
+		map: map
+	});
+}
+
+$(function() {
+	initMap();
+	
+	<% if (query !== undefined && query !== null && query !== "") { %>
+		spots.forEach(function(item) {
+			placeMarker({lat: item.lat, lng: item.lng});
+		});
+	<% } %>
+});
+
+</script>
+
+<div id="content">
+	<% if (query !== undefined && query !== null && query !== "") { %>
+		<%- include('partials/sidebar'); %>
+	<% } %>
+		<div id="map">
+			<div class="wrap">
+				Unfortunately, we haven't been able to load Google Maps.
+			</div>
+		</div>
+	<%- include('partials/login') %>
+</div>
+
+</body>
+</html>
